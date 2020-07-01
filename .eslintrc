@@ -1,0 +1,26 @@
+{
+  "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+  ],
+  "plugins": [
+      "prettier"
+  ],
+  "env": {
+      "browser": true,
+      "es6": true,
+      "node": true,
+      "jest": true
+  },
+  "rules": {
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "single"],
+      "semi": ["error", "never"],
+      "prettier/prettier": "error",
+      "arrow-parens": ["error", "as-needed"]
+  },
+  "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module"
+  }
+}
