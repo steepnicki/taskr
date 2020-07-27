@@ -14,4 +14,4 @@ resourceLocator
   .register('taskr', taskr(resourceLocator))
   .logger.setInstance('taskr')
 
-require('./cli/')(resourceLocator, process.argv)
+require('./cli/cli')(resourceLocator, process.argv)
