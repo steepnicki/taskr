@@ -31,7 +31,7 @@ taskr run taskName # runs the task called taskName
 In order to create new taskr compatible task, create a new `*.js` file under the `taskr/tasks/` dir. The file name will later be used as a part of the `taskr run` command. Make sure your task file follows the template from the example located below.
 
 `testTask.js`
-```
+```node
 const task = (resourceLocator, cb) => {
   const { logger } = resourceLocator
   logger.info('Hello world!')
